@@ -15,6 +15,10 @@ public class Athlete {
 	private String sport;
 	private String specialMove;
 	
+	public Athlete() {
+		
+	}
+	
 	public Athlete(String name, String sport, String specialMove) {
 		super();
 		this.name = name;
@@ -49,6 +53,11 @@ public class Athlete {
 	@Override
 	public String toString() {
 		return "Athlete [id=" + id + ", name=" + name + ", sport=" + sport + ", specialMove=" + specialMove + "]";
+	}
+
+	public void map(Object object) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	

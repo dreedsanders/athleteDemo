@@ -2,6 +2,8 @@ package com.dinner.Athletes.service;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,6 +12,7 @@ import com.dinner.Athletes.model.Athlete;
 import com.dinner.Athletes.repository.AthleteRepo;
 
 @Service
+@Transactional
 public class AthleteService {
 	
 	@Autowired
